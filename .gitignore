@@ -1,0 +1,11 @@
+build/
+tmp/
+output/
+.vscode/
+*.elf
+*.hex
+*.bin
+*.eep
+report/findings.md
+evidence/04-hardcoded-pin-firmware.png
+evidence/07-final-static-verification.png

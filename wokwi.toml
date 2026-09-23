@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = "build/virtual-smart-lock.ino.hex"
+elf = "build/virtual-smart-lock.ino.elf"
+vcdFile = "evidence/smart-lock-capture.vcd"

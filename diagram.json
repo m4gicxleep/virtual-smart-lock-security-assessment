@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "author": "m4gicxleep",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno1",
+      "top": 80,
+      "left": 10,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": 60,
+      "left": 340,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 350,
+      "left": 340,
+      "attrs": {
+        "horn": "single",
+        "hornColor": "#cccccc"
+      }
+    },
+    {
+      "type": "wokwi-logic-analyzer",
+      "id": "logic1",
+      "top": 360,
+      "left": 10,
+      "attrs": {
+        "channelNames": "UART_TX,SERVO_PWM,D2,D3,D4,D5,D6,D7",
+        "bufferSize": "1000000"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "keypad1:R1",
+      "uno1:9",
+      "green",
+      []
+    ],
+    [
+      "keypad1:R2",
+      "uno1:8",
+      "green",
+      []
+    ],
+    [
+      "keypad1:R3",
+      "uno1:7",
+      "green",
+      []
+    ],
+    [
+      "keypad1:R4",
+      "uno1:6",
+      "green",
+      []
+    ],
+    [
+      "keypad1:C1",
+      "uno1:5",
+      "blue",
+      []
+    ],
+    [
+      "keypad1:C2",
+      "uno1:4",
+      "blue",
+      []
+    ],
+    [
+      "keypad1:C3",
+      "uno1:3",
+      "blue",
+      []
+    ],
+    [
+      "keypad1:C4",
+      "uno1:2",
+      "blue",
+      []
+    ],
+    [
+      "servo1:PWM",
+      "uno1:10",
+      "orange",
+      []
+    ],
+    [
+      "servo1:V+",
+      "uno1:5V",
+      "red",
+      []
+    ],
+    [
+      "servo1:GND",
+      "uno1:GND.2",
+      "black",
+      []
+    ],
+    [
+      "logic1:D0",
+      "uno1:1",
+      "purple",
+      []
+    ],
+    [
+      "logic1:D1",
+      "uno1:10",
+      "orange",
+      []
+    ],
+    [
+      "logic1:GND",
+      "uno1:GND.1",
+      "black",
+      []
+    ]
+  ],
+  "serialMonitor": {
+    "collapse": false,
+    "convertEol": false,
+    "display": "always",
+    "newline": "lf"
+  },
+  "dependencies": {}
+}
